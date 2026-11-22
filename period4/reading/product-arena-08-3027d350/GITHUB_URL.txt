@@ -1,2 +1,2 @@
-https://github.com/pinellia-ai/bohriumai/tree/main/period4/reading/product-arena-08-3027d350
-SKILL.md
+https://github.com/pinellia-ai/bohriumai/blob/main/period4/reading/product-arena-08-3027d350/SKILL.md
+/SKILL.md

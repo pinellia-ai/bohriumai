@@ -1,2 +1,2 @@
-https://github.com/pinellia-ai/bohriumai/tree/main/period4/writing/challenge-96263d10
-SKILL.md
+https://github.com/pinellia-ai/bohriumai/blob/main/period4/writing/challenge-96263d10/SKILL.md
+/SKILL.md

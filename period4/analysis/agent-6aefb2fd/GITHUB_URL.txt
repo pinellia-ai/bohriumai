@@ -1,2 +1,2 @@
-https://github.com/pinellia-ai/bohriumai/tree/main/period4/analysis/agent-6aefb2fd
-SKILL.md
+https://github.com/pinellia-ai/bohriumai/blob/main/period4/analysis/agent-6aefb2fd/SKILL.md
+/SKILL.md

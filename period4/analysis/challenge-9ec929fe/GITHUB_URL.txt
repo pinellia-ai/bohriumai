@@ -1,2 +1,2 @@
-https://github.com/pinellia-ai/bohriumai/tree/main/period4/analysis/challenge-9ec929fe
-SKILL.md
+https://github.com/pinellia-ai/bohriumai/blob/main/period4/analysis/challenge-9ec929fe/SKILL.md
+/SKILL.md
