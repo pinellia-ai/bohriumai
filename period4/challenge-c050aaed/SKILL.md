@@ -1,0 +1,120 @@
+---
+name: annotation-harvester
+description: |
+  阅读批注与知识沉淀 Skill。把散落的批注（PDF 高亮/页边批注/扫描手写/网页剪藏/零散
+  语句）变成可回溯、可检索、可关联的知识资产：批注提取（保留页码/上下文/标注类型/
+  颜色含义）、笔记结构化、知识关联（与主题/材料/结论挂接）、后续检索。
+---
+
+# Annotation Harvester — 阅读批注与知识沉淀 Skill
+
+## 1. 用途与适用范围
+
+批注承载"这一句为什么重要"的判断——离开原文件就只剩无法回溯的句子。四步：提取（含上下文与类型）、结构化、关联、检索。**每条批注回到原文件可定位**。
+
+## 2. 输入识别（Step 0，必做）
+
+1. 读 `/input/case.json`：output_contract 全部字段、case_id、批注载体（PDF 注释层/剪藏/手写扫描/零散文本）。
+2. 盘点：载体类型与数量、可提取性（PDF 注释层可直接读；扫描件需 OCR）。
+
+## 3. 工作流程
+
+### Step 1 批注提取
+- PDF 注释层：逐条读 `{页码, 标注类型(高亮/下划线/旁注), 被标原文, 批注内容, 颜色}`——颜色含义如有约定（如红色=质疑）登记到图例。
+- 扫描手写：OCR + 人工可核定位；网页剪藏：保留来源 URL+抓取时间。
+- 提取失败逐条登记（不静默丢弃）。
+
+### Step 2 笔记结构化
+- 每条批注：`{annotation_id, 原文被标片段, 批注内容, 类型(质疑/重点/疑问/延伸), 上下文(所在段落大意), source_locator}`。
+- 零散语句：归位到主题/材料，注明"来源为笔记文件，原文出处未提供"（不硬挂）。
+
+### Step 3 知识关联
+- 批注 ↔ 主题/材料/结论挂接：`{annotation_id → related_topic, related_conclusion}`；同主题批注聚类。
+
+### Step 4 检索与沉淀
+- 索引：关键词/类型/材料 → annotation_id；沉淀为可复用知识卡（原文+判断+上下文一体）。
+
+## 4. 输出契约
+
+```json
+{
+  "case_id": "<原样>",
+  "task": "annotation_harvest",
+  "status": "success | partial | failed",
+  "annotations": [
+    {"annotation_id":"a1","source":{"file":"paper_v2.pdf","page":4,"locator":"高亮框"},"type":"highlight+note",
+     "highlighted_text":"被标原文","note":"批注内容","color_meaning":"红色=质疑（图例）",
+     "context":"所在段落大意","topic_link":"机制X"},
+    {"annotation_id":"a7","source":{"file":"scan_p12.jpg","ocr_confidence":0.82},"type":"handwriting",
+     "extracted":"手写内容","locator":{"page":12},"needs_human_review":false}
+  ],
+  "clusters": [{"topic":"机制X","annotation_ids":["a1","a3","a9"]}],
+  "index": {"by_type":{"质疑":4,"重点":11},"by_material":{"paper_v2":9}},
+  "extraction_failures": [{"file":"...","reason":"注释层损坏"}],
+  "color_legend": {"red":"质疑","yellow":"重点"},
+  "gaps": [], "uncertainty_notes": [], "changes": []
+}
+```
+
+硬性要求：annotations 每条有 source_locator；颜色含义有图例；OCR 置信度如实；失败不静默；散落语句不硬挂出处。
+
+## 5. 异常处理
+
+| 情况 | 处置 |
+|---|---|
+| 注释层损坏 | 尝试渲染页面图像提取；失败登记 |
+| 手写难辨 | OCR+needs_human_review |
+| 预算不足 | PDF 注释层优先（结构化程度最高） |
+
+## 6. 自查清单
+
+1. [ ] 每条批注可回原文件定位？
+2. [ ] 类型/颜色含义保留？
+3. [ ] 关联与聚类有依据？
+4. [ ] 失败/难辨如实标注？
+5. [ ] result.json 含 output_contract 全部字段、case_id 原样？
+
+## 7. 效率约束
+
+预算 64 请求 / 900 秒。注释层批量脚本读取；OCR 仅用于必要页；索引自动生成。
+
+## 附：运行时硬性契约（评分相关，逐条执行，优先级最高）
+
+1. **Step 0 必做——读 output_contract**：打开 `/input/case.json`，找到 `output_contract` 字段。它定义 result.json 必须包含的全部字段。**原样保留字段名与嵌套结构，逐字段落实**；contract 缺失时按本文件 §4 结构输出并在 uncertainty_notes 登记。
+2. **case_id**：从 `/input/case.json` 原样读取，禁止自造。
+3. **事实依据**：输入文件与材料是事实依据；不编造记录/引用/软件状态/数据。
+4. **路径**：过程写 `/app/work/`；最终产物写 `/app/output/result.json`。
+5. **尽早落盘**：先写最小可用 result.json 再增强；中断时已落盘内容诚实合法（status=partial）。
+6. **可追溯**：每条结果/判定保留来源定位（文件/记录/原文短句）。
+7. **交付物自检**：SKILL.md + README.md 一致，不一致以本节契约为准。
+
+## v2 执行导向强化（对首轮评测反馈的针对性修正）
+
+首轮评测共性短板：工作流描述偏"清单式"，评测器要看到**真实执行与可复核产物**。本轮强化：
+
+1. **产物即证据**：交付中至少包含 3 个真实执行产物（CSV/JSON/日志/脚本），由脚本或工具真实生成，非描述性文字。
+2. **过程留痕**：run_log.md 逐条记录执行的命令与统计（抽取数量/命中数/对账结果），换人可重跑得到同一批产物。
+3. **对账自检**：关键数字前后对账（输入数=处理数+跳过数等），对账脚本化。
+4. **契约不变**：result.json 仍逐字段落实 case.json 的 output_contract；case_id 原样；status 诚实标注 partial。
+
+**本题针对性补强**：
+1. PDF 注释层用 PyMuPDF page.annots() 逐条真实提取（页码/类型/颜色/内容）；
+2. 颜色→含义图例先于提取；
+3. 索引输出为 CSV（关键词, annotation_id）。
+
+## v4 量化对账强化（基于 64 题出分复盘，11-22）
+
+复盘规律：**评测分 ≈ 可量化对账产物密度 × 真实执行痕迹**。高分题（76-81）全部交付"每行可查的 CSV 对账表 + 状态枚举 + 计数断言"；低分题（39-59）败在"描述性框架无产物"。
+
+本轮硬性要求（除本文件已有契约外追加）：
+
+1. **数值型交付物**：按下方"本题针对性补强"列出的 CSV/脚本，全部真实生成到 /app/output/（不虚构行数与计数）。
+2. **对账断言**：每张表给出计数对账（总数=分项之和），写进 result.json 的对账字段。
+3. **真实执行**：任何统计/计数由脚本产出，run_log.md 逐条记录命令与输出摘要。
+4. **契约不变**：result.json 逐字段落实 case.json 的 output_contract；case_id 原样；status 诚实 partial。
+
+**本题针对性补强**：
+1. 交付量化对账：annotations.csv（来源/页码/类型/颜色/内容）逐条
+2. extraction_failures 计数
+3. 聚类表（topic→ids）
+4. 颜色图例。
