@@ -112,3 +112,16 @@ description: |
 1. 交付量化对账：queries.csv（id/SQL/目的/预期行数/实际行数/sanity）逐条
 2. failed_queries 留痕
 3. field_semantics 覆盖结果集每列。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+queries.csv 行数=执行查询数；行数 sanity 全 PASS；字段语义覆盖=结果集列数
+
+**本题针对性修正**：
+查询留痕 CSV 化 + 行数 sanity 断言

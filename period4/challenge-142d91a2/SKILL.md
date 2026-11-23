@@ -94,3 +94,17 @@ description: |
 1. 交付量化对账：alignment_matrix.csv（目标/路线/验证/成果）
 2. milestones.csv（月度/依赖/关键路径）
 3. risks.csv 四要素逐条。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/docx_inventory.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+alignment_matrix/milestones/risks 三表行数对账；风险四要素齐断言
+
+**本题针对性修正**：
+三张表 CSV 化 + 交付文件 docx_inventory 实测

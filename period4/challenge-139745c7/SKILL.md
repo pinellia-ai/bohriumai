@@ -95,3 +95,17 @@ description: |
 1. 交付量化对账：index_stats（文件数/可抽取数/目录数）
 2. results.csv（问题/文件/版本/定位/依据）
 3. empty_answers（已检索范围声明）。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/csv_profile.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+index_stats（文件/可抽取/目录计数）真实执行；results 每条有定位与依据
+
+**本题针对性修正**：
+文件索引用 csv_profile.py 建立并输出统计

@@ -110,3 +110,17 @@ python3 -c "import fitz; d=fitz.open('<pdf>'); [print(i, 'text' if p.get_text().
 1. 交付量化对账：extraction_inventory.csv（页数/段落/表格/公式计数，前后对账）
 2. verification 抽检表（样本数/mismatch=0）
 3. run_log.md 真实命令逐条。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/pdf_probe.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+probe.json 真实执行（页数/文本层/栏猜测）；解析元素计数前后对账
+
+**本题针对性修正**：
+解析前必跑 pdf_probe.py 探测；段落/表格/公式计数用 reconcile.py 对账（原文单元数=解析数）

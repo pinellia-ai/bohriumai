@@ -92,3 +92,17 @@ description: |
 1. 交付量化对账：consistency_ledger 四表 CSV（术语/符号/定义/结论）
 2. impact_analysis 表（改动→受影响段）
 3. edit_log.csv（原句保留）。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/docx_inventory.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+consistency_ledger 四表行数对账；impact_analysis 每改动有受影响段清单
+
+**本题针对性修正**：
+长文档一致性底账全部 CSV 化（术语/符号/定义/结论）

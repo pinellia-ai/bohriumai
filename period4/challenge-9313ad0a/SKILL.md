@@ -131,3 +131,16 @@ description: |
 1. 交付量化对账：nodes.csv/edges.csv（含 evidence locator）
 2. 覆盖核查表（问题/方法/结果/局限/空白 五类计数）
 3. 层深≤4 断言。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+nodes/edges CSV 行数=覆盖核查五类合计；层深≤4 断言
+
+**本题针对性修正**：
+图谱 CSV 化对账

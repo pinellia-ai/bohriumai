@@ -117,3 +117,17 @@ description: |
 2. term_normalization.csv
 3. theme_evolution.csv（事件/年份/依据文献≥2）
 4. open_questions 文献链。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+- `scripts/csv_profile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+output_curve.csv 逐年计数与总量对账；每个演化事件引用≥2 文献断言
+
+**本题针对性修正**：
+频次统计 CSV 化对账

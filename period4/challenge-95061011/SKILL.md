@@ -115,3 +115,17 @@ description: |
 
 **本题针对性补强**：
 1. 交付量化对账：matrix.csv（paper,field,value,unit,locator）全格覆盖计数；comparable_subsets 判定规则表；冲突归因四类枚举计数。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+- `scripts/csv_profile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+matrix.csv 行数=论文数×字段数（对账）；四类归因枚举计数
+
+**本题针对性修正**：
+比较矩阵 CSV 化 + csv_profile 抽查各论文口径

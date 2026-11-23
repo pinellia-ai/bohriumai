@@ -129,3 +129,17 @@ description: |
 2. conversion_inventory 计数表
 3. pdffonts 实测留档
 4. figure_audit 变形=0。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/docx_inventory.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+inventory.json 段落/表格/图片计数前后对账一致；crossref 全部为域
+
+**本题针对性修正**：
+转换完整性用 docx_inventory.py 在套用前/后各跑一次，计数差异逐项解释

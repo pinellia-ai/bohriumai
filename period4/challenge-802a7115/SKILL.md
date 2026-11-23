@@ -115,3 +115,16 @@ description: |
 1. 交付量化对账：term_map.csv（概念/语言/写法/source分级）
 2. by_language 统计（空=0如实）
 3. query_variants.csv；歧义缩写处理记录表。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+term_map.csv 行数=概念数×语言覆盖声明一致；空语言计数如实
+
+**本题针对性修正**：
+术语映射表 CSV 化并对账

@@ -110,3 +110,17 @@ description: |
 
 **本题针对性补强**：
 1. 交付量化对账：claim_citation_map.csv（草稿句→引用→支撑判定）逐句；themes.csv 成员计数；disagreements 呈现断言。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/citation_scan.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+claim_citation_map 行数=草稿论断句数（对账）；三层留痕表
+
+**本题针对性修正**：
+句级引用映射 CSV 化

@@ -98,3 +98,16 @@ description: |
 1. 交付量化对账：steps_log.csv（步骤/动作/输入/输出/状态）逐条
 2. failure_recovery 表
 3. conclusions 三层计数（fact/inference/undetermined）。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+steps_log 行数=计划子问题数（对账）；结论三层计数（fact/inference/undetermined）
+
+**本题针对性修正**：
+步骤留痕 CSV 化对账

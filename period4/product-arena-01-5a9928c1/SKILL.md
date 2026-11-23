@@ -114,3 +114,17 @@ description: |
 
 **本题针对性补强**：
 1. 交付量化对账：term_check.csv（术语×出现处×一致性）脚本生成；paragraph_map.csv count 对账；number_audit 逐条并排。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/term_check.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+term_check 违规=0 才允许 success；段落映射 count 对账
+
+**本题针对性修正**：
+术语一致性用 term_check.py 真实执行（术语表×全文）

@@ -117,3 +117,16 @@ description: |
 1. 交付量化对账：subquestions.csv
 2. retrieval_rounds.csv（每轮 new_vs_prev 增量）
 3. stop_report 布尔判定式；partial_match 计数单列。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+subquestions.csv 行数=子问题数；每轮 new_vs_prev 增量非负且可复算
+
+**本题针对性修正**：
+检索轮次命中数用 reconcile.py 对账（识别数=各轮新增之和）

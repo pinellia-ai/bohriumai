@@ -144,3 +144,17 @@ description: |
 
 **本题针对性补强**：
 1. 保持 77.7 分水准：引用回链核验表补列（段落号存在性验证）；三层分离计数（reported/interpreted/inferred 条数）。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/numeric_audit.py`
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+九题全答断言；每条引用段落号存在性验证表
+
+**本题针对性修正**：
+摘要-正文-表格数值用 numeric_audit.py 自动比对

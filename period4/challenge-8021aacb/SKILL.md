@@ -131,3 +131,16 @@ description: |
 
 **本题针对性补强**：
 1. 交付量化对账：claim_evidence.csv（claim/loc/evidence/gap）逐条；edit_plan.csv（action↔issue 关联）；未发现问题维度如实记录。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/reconcile.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+claim_evidence.csv 行数=实质论断数；六类断裂分布计数；未发现问题维度如实
+
+**本题针对性修正**：
+论断清单 CSV 化对账

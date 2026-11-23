@@ -128,3 +128,18 @@ description: |
 
 **本题针对性补强**：
 1. 交付量化对账：source_map.csv（claim/数值/来源文件/表行）逐值；consistency 脚本自动比对输出；缺失章节占位清单计数。
+
+## v5 捆绑脚本强化（11-23，基于 75 题出分复盘）
+
+复盘定论：**评测器奖励"真实跑出来的对账产物"**。本轮把审计工具直接捆绑进本 Skill（resources/scripts/），执行时**必须真实运行**并把输出文件交付到 /app/output/。
+
+**捆绑脚本与运行点**（脚本已随本 Skill 交付，可直接 `python3 scripts/<name>.py ...` 执行）：
+- `scripts/numeric_audit.py`
+- `scripts/citation_scan.py`
+- `scripts/docx_inventory.py`
+
+**交付前数字门槛（gate）——全部 PASS 才允许 status=success**：
+source_map 行数=数值断言数；正文-表格数值 mismatch 清单=0 或逐条解释；引用扫描计数=正文标记数
+
+**本题针对性修正**：
+数值一致性与引用位置全部脚本化审计（numeric_audit + citation_scan）
