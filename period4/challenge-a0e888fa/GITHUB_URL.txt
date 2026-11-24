@@ -1,2 +1,2 @@
-https://github.com/pinellia-ai/bohriumai/blob/main/period4/analysis/challenge-a0e888fa/SKILL.md
+https://github.com/pinellia-ai/bohriumai/blob/main/period4/analysis/challenge-a0e888fa/v6/SKILL.md
 /SKILL.md

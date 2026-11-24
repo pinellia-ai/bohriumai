@@ -1,2 +1,2 @@
-https://github.com/pinellia-ai/bohriumai/blob/main/period4/slides/challenge-20870c35/SKILL.md
+https://github.com/pinellia-ai/bohriumai/blob/main/period4/slides/challenge-20870c35/v6/SKILL.md
 /SKILL.md
