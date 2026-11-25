@@ -1,0 +1,12 @@
+{
+  "checklist": [
+    {"cat": "假设与变量", "item_id": "HV-1", "verdict": "pass", "plan_location": "plan.md §2", "condition_source": "通则"},
+    {"cat": "对照组", "item_id": "CT-1", "verdict": "pass", "plan_location": "plan.md §3 表", "condition_source": "通则"},
+    {"cat": "设备材料", "item_id": "EM-1", "verdict": "pass", "plan_location": "plan.md §4 S2", "condition_source": "inventory equipment[2]"},
+    {"cat": "时间成本", "item_id": "TC-1", "verdict": "conditional", "plan_location": "plan.md §5", "condition_source": "无预算材料(gap)", "needed_action": "补充试剂报价，总额≤预算上限"},
+    {"cat": "参数范围", "item_id": "PR-1", "verdict": "pass", "plan_location": "plan.md §4 80°C", "condition_source": "inventory: 恒温槽量程25-95°C"},
+    {"cat": "风险与异常", "item_id": "RA-1", "verdict": "not_specified", "plan_location": "全文无风险段", "condition_source": "通则"},
+    {"cat": "伦理与安全", "item_id": "ES-1", "verdict": "na", "plan_location": "-", "condition_source": "不涉动物/人体/危化品"},
+    {"cat": "样本", "item_id": "TC-2", "verdict": "fail", "blocking": true, "plan_location": "plan.md §5 n=50", "condition_source": "inventory samples.available_n=20"}
+  ]
+}

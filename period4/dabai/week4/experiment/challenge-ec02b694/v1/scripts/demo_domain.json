@@ -1,0 +1,5 @@
+{"parameters": [
+  {"name": "温度", "unit": "°C", "min": 25, "max": 95, "step": 5, "source": {"type": "equipment_manual", "location": "manual.pdf:p3"}},
+  {"name": "pH", "unit": "", "min": 4, "max": 9, "step": 0.5, "source": {"type": "literature", "location": "ref.json:col3"}}
+],
+ "constraints": [{"type": "material", "expr": "温度<=80", "source": "substrate_spec.json:L4"}]}

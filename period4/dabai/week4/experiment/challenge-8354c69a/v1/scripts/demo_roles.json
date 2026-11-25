@@ -1,0 +1,5 @@
+{"columns": [{"name": "OD450", "role": "measure", "unit": "OD"},
+             {"name": "type", "role": "control_flag"},
+             {"name": "batch", "role": "group"},
+             {"name": "channel", "role": "group"},
+             {"name": "time", "role": "time"}]}

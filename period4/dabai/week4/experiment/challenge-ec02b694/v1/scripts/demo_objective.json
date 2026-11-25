@@ -1,0 +1,1 @@
+{"response": "产率", "direction": "max", "model": {"type": "linear", "coefs": {"温度": 0.8, "pH": -2.0}, "intercept": 10}}

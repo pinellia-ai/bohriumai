@@ -1,0 +1,3 @@
+[
+  {"param": "退火温度", "unit": "°C", "value": 70, "range": [60, 80], "out_of_range_action": "弃用本轮回到70±1", "basis": {"type": "sop", "location": "materials/sop.md:L5"}}
+]

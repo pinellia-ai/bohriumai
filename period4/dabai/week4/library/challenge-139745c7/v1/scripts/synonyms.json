@@ -1,0 +1,6 @@
+{
+  "buffer_group": ["PBS", "磷酸盐缓冲液", "phosphate buffer", "缓冲液"],
+  "apoptosis_group": ["细胞凋亡", "apoptosis", "细胞死亡", "cell death"],
+  "pcr_group": ["PCR", "聚合酶链式反应", "qPCR", "定量PCR"],
+  "western_group": ["western blot", "WB", "蛋白质印迹", "免疫印迹"]
+}

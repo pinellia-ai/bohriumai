@@ -1,0 +1,546 @@
+{
+ "account": "dabai",
+ "updated": "2026-11-25T19:15+08:00",
+ "submissions": [
+  {
+   "cid": "challenge-a0e888fa",
+   "version": "v1",
+   "attempt_id": 105354,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-c0e1e220",
+   "version": "v1",
+   "attempt_id": 105356,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-9562cc8d",
+   "version": "v1",
+   "attempt_id": 105357,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-9ec929fe",
+   "version": "v1",
+   "attempt_id": 105358,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "agent-6aefb2fd",
+   "version": "v1",
+   "attempt_id": 105360,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-5c56458d",
+   "version": "v1",
+   "attempt_id": 105366,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-cf1995b5",
+   "version": "v1",
+   "attempt_id": "104882",
+   "ok": true,
+   "submitted_at": "2026-11-24T14:04:21+00:00"
+  },
+  {
+   "cid": "challenge-2e2c5820",
+   "version": "v1",
+   "attempt_id": "104883",
+   "ok": true,
+   "submitted_at": "2026-11-24T14:10+08:00"
+  },
+  {
+   "cid": "challenge-ec02b694",
+   "version": "v1",
+   "attempt_id": "104887",
+   "ok": true,
+   "submitted_at": "2026-11-24T14:16+08:00"
+  },
+  {
+   "cid": "challenge-7be76e91",
+   "version": "v1",
+   "attempt_id": "104894",
+   "ok": true,
+   "submitted_at": "2026-11-24T14:22+08:00"
+  },
+  {
+   "cid": "challenge-8354c69a",
+   "version": "v1",
+   "attempt_id": "104927",
+   "ok": true,
+   "submitted_at": "2026-11-24T14:30+08:00"
+  },
+  {
+   "cid": "challenge-98e5a474",
+   "version": "v1",
+   "attempt_id": 105336,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-1bd90d8a",
+   "version": "v1",
+   "attempt_id": 105344,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-83d4f050",
+   "version": "v1",
+   "attempt_id": 105345,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-9034312d",
+   "version": "v1",
+   "attempt_id": 105348,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "graphical-abstract-7030fff2",
+   "version": "v1",
+   "attempt_id": 105352,
+   "ok": true,
+   "submitted_at": "2026-11-24T23:31:06"
+  },
+  {
+   "cid": "challenge-139745c7",
+   "version": "v1",
+   "attempt_id": "105171",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:09+08:00"
+  },
+  {
+   "cid": "challenge-2bfd9194",
+   "version": "v1",
+   "attempt_id": "105178",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:11+08:00"
+  },
+  {
+   "cid": "challenge-666fefb0",
+   "version": "v1",
+   "attempt_id": "105198",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:12+08:00"
+  },
+  {
+   "cid": "challenge-80dd5ddc",
+   "version": "v1",
+   "attempt_id": "105215",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:12+08:00"
+  },
+  {
+   "cid": "challenge-c050aaed",
+   "version": "v1",
+   "attempt_id": "105221",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:12+08:00"
+  },
+  {
+   "cid": "challenge-105b70ee",
+   "version": "v1",
+   "attempt_id": "108572",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:46+08:00"
+  },
+  {
+   "cid": "challenge-15c85674",
+   "version": "v1",
+   "attempt_id": "108578",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:51+08:00"
+  },
+  {
+   "cid": "challenge-7c37626c",
+   "version": "v1",
+   "attempt_id": "108592",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:56+08:00"
+  },
+  {
+   "cid": "challenge-95061011",
+   "version": "v1",
+   "attempt_id": "108615",
+   "ok": true,
+   "submitted_at": "2026-11-25T19:02+08:00"
+  },
+  {
+   "cid": "challenge-da62e8d4",
+   "version": "v1",
+   "attempt_id": "108635",
+   "ok": true,
+   "submitted_at": "2026-11-25T19:08+08:00"
+  },
+  {
+   "cid": "challenge-e5e3be30",
+   "version": "v1",
+   "attempt_id": "108648",
+   "ok": true,
+   "submitted_at": "2026-11-25T19:13+08:00"
+  },
+  {
+   "cid": "challenge-f35e4ca5",
+   "version": 1,
+   "attempt_id": "108658",
+   "ok": true,
+   "submitted_at": "2026-11-25T19:10+08:00"
+  },
+  {
+   "cid": "benchmark-a1d81ca4",
+   "version": "v1",
+   "attempt_id": "108565",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:44:01Z"
+  },
+  {
+   "cid": "product-arena-08-3027d350",
+   "version": "v1",
+   "attempt_id": "108574",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:47:25Z"
+  },
+  {
+   "cid": "product-arena-10-760d1a0b",
+   "version": "v1",
+   "attempt_id": "108589",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:52:00Z"
+  },
+  {
+   "cid": "product-arena-09-0e8befd4",
+   "version": "v1",
+   "attempt_id": "108599",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:58:00Z"
+  },
+  {
+   "cid": "challenge-f4bca185",
+   "version": "v1",
+   "attempt_id": "108621",
+   "ok": true,
+   "submitted_at": "2026-11-25T11:04:00Z"
+  },
+  {
+   "cid": "product-arena-01-5a9928c1",
+   "version": "v1",
+   "attempt_id": "108636",
+   "ok": true,
+   "submitted_at": "2026-11-25T11:10:00Z"
+  },
+  {
+   "cid": "product-arena-06-6d8cf72b",
+   "version": "v1",
+   "attempt_id": "108649",
+   "ok": true,
+   "submitted_at": "2026-11-25T11:16:00Z"
+  },
+  {
+   "cid": "agent-f8fb8bda",
+   "version": "v1",
+   "attempt_id": "105237",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:13+08:00"
+  },
+  {
+   "cid": "challenge-041f89c5",
+   "version": "v1",
+   "attempt_id": "105244",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:13+08:00"
+  },
+  {
+   "cid": "challenge-073af7d3",
+   "version": "v1",
+   "attempt_id": "105257",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:14+08:00"
+  },
+  {
+   "cid": "challenge-51977f9b",
+   "version": "v1",
+   "attempt_id": "105263",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:14+08:00"
+  },
+  {
+   "cid": "challenge-e97137c9",
+   "version": "v1",
+   "attempt_id": "105264",
+   "ok": true,
+   "submitted_at": "2026-11-24T23:14+08:00"
+  },
+  {
+   "cid": "challenge-0999879e",
+   "version": "v1",
+   "attempt_id": "104888",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:10+08:00"
+  },
+  {
+   "cid": "challenge-cbe96f01",
+   "version": "v1",
+   "attempt_id": "104889",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:10+08:00"
+  },
+  {
+   "cid": "challenge-9e7302fd",
+   "version": "v1",
+   "attempt_id": "104890",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:10+08:00"
+  },
+  {
+   "cid": "challenge-16d4414d",
+   "version": "v1",
+   "attempt_id": "104891",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:10+08:00"
+  },
+  {
+   "cid": "challenge-de9f0708",
+   "version": "v1",
+   "attempt_id": "104892",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:10+08:00"
+  },
+  {
+   "cid": "challenge-a2909a72",
+   "version": "v1",
+   "attempt_id": "105289",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-e7598a44",
+   "version": "v1",
+   "attempt_id": "105290",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-2dd1f64c",
+   "version": "v1",
+   "attempt_id": "105291",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-60a8202d",
+   "version": "v1",
+   "attempt_id": "105292",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-5c918ff0",
+   "version": "v1",
+   "attempt_id": "105293",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-1e85736f",
+   "version": "v1",
+   "attempt_id": "105294",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-0467f5db",
+   "version": "v1",
+   "attempt_id": "105295",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-5b90f5e9",
+   "version": "v1",
+   "attempt_id": "105297",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-bace1c46",
+   "version": "v1",
+   "attempt_id": "105301",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-802a7115",
+   "version": "v1",
+   "attempt_id": "105304",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "challenge-ad3e9357",
+   "version": "v1",
+   "attempt_id": "105309",
+   "ok": true,
+   "submitted_at": "2026-11-25T00:00+08:00"
+  },
+  {
+   "cid": "ppt-c7b80f0d",
+   "version": "v1",
+   "attempt_id": "105039",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:40+08:00",
+   "note": "同内容另有一次重复提交 attempt 105032（提取attempt id时重发导致），以105039为准"
+  },
+  {
+   "cid": "ppt-6ad93034",
+   "version": "v1",
+   "attempt_id": "105041",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:41+08:00"
+  },
+  {
+   "cid": "challenge-20870c35",
+   "version": "v1",
+   "attempt_id": "105045",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:42+08:00"
+  },
+  {
+   "cid": "ppt-710fbc72",
+   "version": "v1",
+   "attempt_id": "105048",
+   "ok": true,
+   "submitted_at": "2026-11-24T22:43+08:00"
+  },
+  {
+   "cid": "challenge-142d91a2",
+   "version": "v1",
+   "attempt_id": "108564",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:43:48Z"
+  },
+  {
+   "cid": "challenge-2815a418",
+   "version": "v1",
+   "attempt_id": "108573",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:47:30Z"
+  },
+  {
+   "cid": "challenge-308a6fdc",
+   "version": "v1",
+   "attempt_id": "108586",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:52:10Z"
+  },
+  {
+   "cid": "challenge-32c0210d",
+   "version": "v1",
+   "attempt_id": "108600",
+   "ok": true,
+   "submitted_at": "2026-11-25T10:57:40Z"
+  },
+  {
+   "cid": "challenge-8021aacb",
+   "version": "v1",
+   "attempt_id": "108633",
+   "ok": true,
+   "submitted_at": "2026-11-25T11:02:30Z"
+  },
+  {
+   "cid": "challenge-9313ad0a",
+   "version": "v1",
+   "attempt_id": "108640",
+   "ok": true,
+   "submitted_at": "2026-11-25T11:05:50Z"
+  },
+  {
+   "cid": "challenge-96263d10",
+   "version": "v1",
+   "attempt_id": 108570,
+   "ok": true,
+   "submitted_at": "2026-11-25T18:45+08:00"
+  },
+  {
+   "cid": "challenge-a7eb6816",
+   "version": "v1",
+   "attempt_id": 108576,
+   "ok": true,
+   "submitted_at": "2026-11-25T18:48+08:00"
+  },
+  {
+   "cid": "challenge-b810ef56",
+   "version": "v1",
+   "attempt_id": 108588,
+   "ok": true,
+   "submitted_at": "2026-11-25T18:50+08:00"
+  },
+  {
+   "cid": "challenge-bb17a294",
+   "version": "v1",
+   "attempt_id": 108593,
+   "ok": true,
+   "submitted_at": "2026-11-25T18:52+08:00"
+  },
+  {
+   "cid": "challenge-caca73b2",
+   "version": "v1",
+   "attempt_id": 108609,
+   "ok": true,
+   "submitted_at": "2026-11-25T18:55+08:00"
+  },
+  {
+   "cid": "challenge-d403dce6",
+   "version": "v1",
+   "attempt_id": 108632,
+   "ok": true,
+   "submitted_at": "2026-11-25T18:57+08:00"
+  },
+  {
+   "cid": "product-arena-02-7051d92d",
+   "version": "v1",
+   "attempt_id": "108611",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:56+08:00"
+  },
+  {
+   "cid": "product-arena-03-429cc14d",
+   "version": "v1",
+   "attempt_id": "108616",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:56+08:00"
+  },
+  {
+   "cid": "product-arena-04-4b82ad21",
+   "version": "v1",
+   "attempt_id": "108617",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:56+08:00"
+  },
+  {
+   "cid": "product-arena-05-64faa4a2",
+   "version": "v1",
+   "attempt_id": "108618",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:56+08:00"
+  },
+  {
+   "cid": "product-arena-07-865de7e4",
+   "version": "v1",
+   "attempt_id": "108622",
+   "ok": true,
+   "submitted_at": "2026-11-25T18:56+08:00"
+  }
+ ]
+}

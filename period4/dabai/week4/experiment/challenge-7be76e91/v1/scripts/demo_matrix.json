@@ -1,0 +1,11 @@
+{"criteria": [
+  {"name": "总成本", "weight": 0.3, "direction": "min", "type": "numeric", "hard_cap": 5000},
+  {"name": "总时长", "weight": 0.25, "direction": "min", "type": "numeric"},
+  {"name": "证据强度", "weight": 0.25, "type": "anchor"},
+  {"name": "可行性", "weight": 0.2, "type": "anchor"}
+],
+ "plans": [
+  {"plan_id": "A", "values": {"总成本": 320, "总时长": 2, "证据强度": 2, "可行性": 3}},
+  {"plan_id": "B", "values": {"总成本": 1150, "总时长": 9, "证据强度": 3, "可行性": 1}},
+  {"plan_id": "C", "values": {"总成本": 800, "总时长": 5, "证据强度": 1, "可行性": 3}, "hard_fail": ["HC1:超时间窗3天"]}
+]}

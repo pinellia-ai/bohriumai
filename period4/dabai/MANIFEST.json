@@ -1,0 +1,772 @@
+[
+ {
+  "id": "agent-6aefb2fd",
+  "title": "多步骤数据分析 Agent",
+  "track": "analysis",
+  "version": "v1",
+  "attempts": [
+   105360
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "agent-f8fb8bda",
+  "title": "深度研究 Agent",
+  "track": "research",
+  "version": "v1",
+  "attempts": [
+   "105237"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "benchmark-a1d81ca4",
+  "title": "文献阅读 Benchmark 与评测工具",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108565"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-041f89c5",
+  "title": "科研选题与创新性评估",
+  "track": "research",
+  "version": "v1",
+  "attempts": [
+   "105244"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-0467f5db",
+  "title": "检索覆盖率与遗漏分析",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105295"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-073af7d3",
+  "title": "研究前沿与趋势分析",
+  "track": "research",
+  "version": "v1",
+  "attempts": [
+   "105257"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-0999879e",
+  "title": "论文质量审查",
+  "track": "review",
+  "version": "v1",
+  "attempts": [
+   "104888"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-105b70ee",
+  "title": "文献结论与数据提取",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108572"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-139745c7",
+  "title": "科研文件智能检索",
+  "track": "library",
+  "version": "v1",
+  "attempts": [
+   "105171"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-142d91a2",
+  "title": "写作15｜开题报告与研究计划书",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108564"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-15c85674",
+  "title": "文献智能问答",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108578"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-16d4414d",
+  "title": "论文逻辑与论证审查",
+  "track": "review",
+  "version": "v1",
+  "attempts": [
+   "104891"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-1bd90d8a",
+  "title": "科研数据图表生成与编辑",
+  "track": "graphics",
+  "version": "v1",
+  "attempts": [
+   105344
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-1e85736f",
+  "title": "最新文献发现与追踪",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105294"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-20870c35",
+  "title": "学术汇报内容组织",
+  "track": "slides",
+  "version": "v1",
+  "attempts": [
+   "105045"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-2815a418",
+  "title": "审稿回复与论文修改",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108573"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-2bfd9194",
+  "title": "科研资料库与文件管理",
+  "track": "library",
+  "version": "v1",
+  "attempts": [
+   "105178"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-2dd1f64c",
+  "title": "文献筛选与智能排序",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105291"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-2e2c5820",
+  "title": "实验方案可行性评估",
+  "track": "experiment",
+  "version": "v1",
+  "attempts": [
+   "104883"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-308a6fdc",
+  "title": "写作01｜学术论文写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108586"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-32c0210d",
+  "title": "学位论文与长文档写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108600"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-51977f9b",
+  "title": "系统性文献综述",
+  "track": "research",
+  "version": "v1",
+  "attempts": [
+   "105263"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-5b90f5e9",
+  "title": "系统性文献检索与纳排筛选",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105297"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-5c56458d",
+  "title": "科研数据库查询与分析",
+  "track": "analysis",
+  "version": "v1",
+  "attempts": [
+   105366
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-5c918ff0",
+  "title": "多数据库联合检索",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105293"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-60a8202d",
+  "title": "引文追踪与关联文献发现",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105292"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-666fefb0",
+  "title": "文献与资料自动分类",
+  "track": "library",
+  "version": "v1",
+  "attempts": [
+   "105198"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-7be76e91",
+  "title": "实验方案比较与选择",
+  "track": "experiment",
+  "version": "v1",
+  "attempts": [
+   "104894"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-7c37626c",
+  "title": "公式解析与数学推理",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108592"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-8021aacb",
+  "title": "论文结构与逻辑优化",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108633"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-802a7115",
+  "title": "跨语言文献检索",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105304"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-80dd5ddc",
+  "title": "科研知识库问答",
+  "track": "library",
+  "version": "v1",
+  "attempts": [
+   "105215"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-8354c69a",
+  "title": "实验结果解释与异常分析",
+  "track": "experiment",
+  "version": "v1",
+  "attempts": [
+   "104927"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-83d4f050",
+  "title": "生物机制图与通路图",
+  "track": "graphics",
+  "version": "v1",
+  "attempts": [
+   105345
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-9034312d",
+  "title": "实验装置与技术路线图",
+  "track": "graphics",
+  "version": "v1",
+  "attempts": [
+   105348
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-9313ad0a",
+  "title": "写作19｜思维导图",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108640"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-95061011",
+  "title": "多文档比较与整合",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108615"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-9562cc8d",
+  "title": "科研数据可视化",
+  "track": "analysis",
+  "version": "v1",
+  "attempts": [
+   105357
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-96263d10",
+  "title": "学术格式与模板适配",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   108570
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-98e5a474",
+  "title": "科研示意图生成与编辑",
+  "track": "graphics",
+  "version": "v1",
+  "attempts": [
+   105336
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-9e7302fd",
+  "title": "研究方法与统计审查",
+  "track": "review",
+  "version": "v1",
+  "attempts": [
+   "104890"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-9ec929fe",
+  "title": "科研代码生成与执行",
+  "track": "analysis",
+  "version": "v1",
+  "attempts": [
+   105358
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-a0e888fa",
+  "title": "科研数据清洗与处理",
+  "track": "analysis",
+  "version": "v1",
+  "attempts": [
+   105354
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-a2909a72",
+  "title": "学术文献检索",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105289"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-a7eb6816",
+  "title": "写作17｜科研成果转化写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   108576
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-ad3e9357",
+  "title": "专利与技术文献检索",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105309"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-b810ef56",
+  "title": "写作05｜文献证据驱动写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   108588
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-bace1c46",
+  "title": "文献研究质量评价",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105301"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-bb17a294",
+  "title": "写作12｜学术翻译与双语写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   108593
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-c050aaed",
+  "title": "阅读批注与知识沉淀",
+  "track": "library",
+  "version": "v1",
+  "attempts": [
+   "105221"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-c0e1e220",
+  "title": "统计分析与结果解读",
+  "track": "analysis",
+  "version": "v1",
+  "attempts": [
+   105356
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-caca73b2",
+  "title": "写作10｜结果与讨论章节写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   108609
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-cbe96f01",
+  "title": "引用与事实核验",
+  "track": "review",
+  "version": "v1",
+  "attempts": [
+   "104889"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-cf1995b5",
+  "title": "实验方案生成与优化",
+  "track": "experiment",
+  "version": "v1",
+  "attempts": [
+   "104882"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-d403dce6",
+  "title": "写作14｜基金申请书写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   108632
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-da62e8d4",
+  "title": "论文复现与方法验证",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108635"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-de9f0708",
+  "title": "学术规范与合规检查",
+  "track": "review",
+  "version": "v1",
+  "attempts": [
+   "104892"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-e5e3be30",
+  "title": "文献证据溯源与事实核验",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108648"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-e7598a44",
+  "title": "科研问题驱动检索",
+  "track": "search",
+  "version": "v1",
+  "attempts": [
+   "105290"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-e97137c9",
+  "title": "文献综述生成",
+  "track": "research",
+  "version": "v1",
+  "attempts": [
+   "105264"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-ec02b694",
+  "title": "实验参数优化建议",
+  "track": "experiment",
+  "version": "v1",
+  "attempts": [
+   "104887"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-f35e4ca5",
+  "title": "阅读02｜科研图表解析",
+  "track": "reading",
+  "version": 1,
+  "attempts": [
+   "108658"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "challenge-f4bca185",
+  "title": "文献数据清洗与标准化",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108621"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "graphical-abstract-7030fff2",
+  "title": "Graphical Abstract（图形摘要）",
+  "track": "graphics",
+  "version": "v1",
+  "attempts": [
+   105352
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "ppt-6ad93034",
+  "title": "学术 PPT 生成与编辑",
+  "track": "slides",
+  "version": "v1",
+  "attempts": [
+   "105041"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "ppt-710fbc72",
+  "title": "学术 PPT 模板与格式适配",
+  "track": "slides",
+  "version": "v1",
+  "attempts": [
+   "105048"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "ppt-c7b80f0d",
+  "title": "论文转学术 PPT",
+  "track": "slides",
+  "version": "v1",
+  "attempts": [
+   "105039"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-01-5a9928c1",
+  "title": "阅读03｜文献翻译",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108636"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-02-7051d92d",
+  "title": "写作02｜学术语言润色",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108611"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-03-429cc14d",
+  "title": "写作04｜参考文献与引用管理",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108616"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-04-4b82ad21",
+  "title": "写作08｜引言与相关工作写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108617"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-05-64faa4a2",
+  "title": "写作09｜方法与实验章节写作",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108618"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-06-6d8cf72b",
+  "title": "阅读10｜文献总结与结构化笔记",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108649"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-07-865de7e4",
+  "title": "写作13｜LaTeX 写作与编译",
+  "track": "writing",
+  "version": "v1",
+  "attempts": [
+   "108622"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-08-3027d350",
+  "title": "阅读01｜文献文档解析",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108574"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-09-0e8befd4",
+  "title": "阅读14｜Nanopublication",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108599"
+  ],
+  "status": "submitted"
+ },
+ {
+  "id": "product-arena-10-760d1a0b",
+  "title": "阅读15｜文献知识图谱构建",
+  "track": "reading",
+  "version": "v1",
+  "attempts": [
+   "108589"
+  ],
+  "status": "submitted"
+ }
+]

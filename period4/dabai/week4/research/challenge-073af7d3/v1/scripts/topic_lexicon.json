@@ -1,0 +1,8 @@
+{
+  "topics": {
+    "transformer": ["transformer", "attention", "self-attention"],
+    "single-cell": ["single-cell", "scRNA-seq", "单细胞"],
+    "crispr": ["CRISPR", "Cas9", "基因编辑"],
+    "diffusion-model": ["diffusion model", "扩散模型", "DDPM"]
+  }
+}

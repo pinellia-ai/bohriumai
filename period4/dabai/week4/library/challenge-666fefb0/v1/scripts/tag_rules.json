@@ -1,0 +1,8 @@
+{
+  "topics": {
+    "gene-editing": {"keywords": ["CRISPR", "Cas9", "基因编辑", "碱基编辑", "knock-in", "knockout"]},
+    "single-cell": {"keywords": ["单细胞", "single-cell", "scRNA-seq", "scATAC"]},
+    "proteomics": {"keywords": ["蛋白质组", "proteomics", "质谱", "mass spectrometry", "HPLC"]},
+    "machine-learning": {"keywords": ["深度学习", "deep learning", "神经网络", "transformer", "机器学习"]}
+  }
+}

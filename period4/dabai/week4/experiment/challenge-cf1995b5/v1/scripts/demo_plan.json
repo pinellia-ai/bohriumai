@@ -1,0 +1,16 @@
+{
+  "hypotheses_variables": [
+    {"h_id": "H1", "hypothesis": "温度升高使转化率上升", "iv": {"name": "温度", "operational_def": "恒温槽控温", "unit": "°C", "levels": [60, 65, 70, 75, 80]}, "dv": {"name": "转化率", "unit": "%", "operational_def": "HPLC外标法"}, "confounders": ["批次差异", "搅拌速率"], "source": "materials/equipment.json:L12"}
+  ],
+  "controls": [
+    {"group": "空白基线25°C", "purpose": "排除室温本底转化", "for_hypothesis": "H1", "n": 3, "cost_per_sample": 20},
+    {"group": "阳性对照70°C文献最优", "purpose": "排除体系失活导致的假阴性", "for_hypothesis": "H1", "n": 3, "cost_per_sample": 20}
+  ],
+  "steps": [
+    {"step_id": "S1", "action": "配制反应液", "equipment": [{"model": "移液器P1000"}], "reagents": [{"name": "底物A", "qty_total": 6, "unit_price": 50}], "duration_min": 40, "parallelizable": false, "depends_on": []},
+    {"step_id": "S2", "action": "恒温反应2h", "equipment": [{"model": "恒温槽H"}], "reagents": [], "duration_min": 120, "parallelizable": true, "depends_on": ["S1"]},
+    {"step_id": "S3", "action": "HPLC检测", "equipment": [{"model": "HPLC-X"}], "reagents": [{"name": "流动相乙腈", "qty_total": 2, "unit_price": 120}], "duration_min": 60, "parallelizable": false, "depends_on": ["S2"]}
+  ],
+  "readout_criteria": [{"criterion": "阳性对照转化率≥文献值±10%"}],
+  "risks": [{"risk_id": "R1", "step": "S2", "failure_mode": "阳性对照无响应", "trigger_criterion": "阳性对照转化率<文献下限", "stop_loss": "停线重配体系", "fallback": "改用B方案", "severity": "high"}]
+}
